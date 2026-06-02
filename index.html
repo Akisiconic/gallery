@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soccer Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>The Beautiful Game</h1>
+    <p class="subtitle">Matches &bull; Players &bull; Stadiums</p>
+  </header>
+
+  <nav class="filters" role="navigation" aria-label="Filter by category">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="matches">Matches</button>
+    <button class="filter-btn" data-filter="players">Players</button>
+    <button class="filter-btn" data-filter="stadiums">Stadiums</button>
+  </nav>
+
+  <main class="gallery" id="gallery">
+
+    <!-- Matches -->
+    <article class="gallery-item" data-category="matches" data-index="0">
+      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=400&fit=crop" alt="Soccer match in action" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Matches</span>
+        <span class="overlay-title">Final Whistle</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="matches" data-index="1">
+      <img src="https://images.unsplash.com/photo-1540747913346-19212a4b423f?w=600&h=400&fit=crop" alt="Goal celebration" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Matches</span>
+        <span class="overlay-title">Goal!</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="matches" data-index="2">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop" alt="Midfield battle" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Matches</span>
+        <span class="overlay-title">Midfield Battle</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="matches" data-index="3">
+      <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&h=400&fit=crop" alt="Penalty kick" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Matches</span>
+        <span class="overlay-title">Penalty Kick</span>
+      </div>
+    </article>
+
+    <!-- Players -->
+    <article class="gallery-item" data-category="players" data-index="4">
+      <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&h=400&fit=crop" alt="Player dribbling" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Players</span>
+        <span class="overlay-title">On the Ball</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="players" data-index="5">
+      <img src="https://images.unsplash.com/photo-1551958219-acbc595d9e10?w=600&h=400&fit=crop" alt="Goalkeeper save" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Players</span>
+        <span class="overlay-title">The Save</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="players" data-index="6">
+      <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&h=400&fit=crop" alt="Player in training" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Players</span>
+        <span class="overlay-title">Training Day</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="players" data-index="7">
+      <img src="https://images.unsplash.com/photo-1600679472829-3044539ce8ed?w=600&h=400&fit=crop" alt="Free kick technique" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Players</span>
+        <span class="overlay-title">Free Kick</span>
+      </div>
+    </article>
+
+    <!-- Stadiums -->
+    <article class="gallery-item" data-category="stadiums" data-index="8">
+      <img src="https://images.unsplash.com/photo-1565732808-6c7c6b69f0b1?w=600&h=400&fit=crop" alt="Stadium at night" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Stadiums</span>
+        <span class="overlay-title">Night Lights</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="stadiums" data-index="9">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop" alt="Packed stadium crowd" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Stadiums</span>
+        <span class="overlay-title">Sold Out</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="stadiums" data-index="10">
+      <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&h=400&fit=crop" alt="Aerial stadium view" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Stadiums</span>
+        <span class="overlay-title">Bird's Eye</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="stadiums" data-index="11">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=600&h=400&fit=crop" alt="Empty stadium pitch" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Stadiums</span>
+        <span class="overlay-title">Before Kickoff</span>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&#x2715;</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+        <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
