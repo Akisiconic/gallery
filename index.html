@@ -3,121 +3,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soccer Gallery</title>
+  <title>Soccer Legends Gallery</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>The Beautiful Game</h1>
-    <p class="subtitle">Matches &bull; Players &bull; Stadiums</p>
+    <h1>Soccer Legends</h1>
+    <p class="subtitle">The greatest players to ever kick a ball</p>
   </header>
 
   <nav class="filters" role="navigation" aria-label="Filter by category">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="matches">Matches</button>
-    <button class="filter-btn" data-filter="players">Players</button>
-    <button class="filter-btn" data-filter="stadiums">Stadiums</button>
+    <button class="filter-btn" data-filter="stars">Modern Stars</button>
+    <button class="filter-btn" data-filter="legends">Legends</button>
   </nav>
 
   <main class="gallery" id="gallery">
 
-    <!-- Matches -->
-    <article class="gallery-item" data-category="matches" data-index="0">
-      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=400&fit=crop" alt="Soccer match in action" loading="lazy" />
+    <!-- Modern Stars -->
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg/330px-Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg"
+        alt="Lionel Messi" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Matches</span>
-        <span class="overlay-title">Final Whistle</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Lionel Messi</span>
+        <span class="overlay-sub">Argentina &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="matches" data-index="1">
-      <img src="https://images.unsplash.com/photo-1540747913346-19212a4b423f?w=600&h=400&fit=crop" alt="Goal celebration" loading="lazy" />
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg/330px-President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/9/9c/President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg"
+        alt="Cristiano Ronaldo" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Matches</span>
-        <span class="overlay-title">Goal!</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Cristiano Ronaldo</span>
+        <span class="overlay-sub">Portugal &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="matches" data-index="2">
-      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop" alt="Midfield battle" loading="lazy" />
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg/330px-2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/1/1e/2022_FIFA_World_Cup_United_States_1%E2%80%931_Wales_-_%2832%29_%28cropped%29.jpg"
+        alt="Gareth Bale" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Matches</span>
-        <span class="overlay-title">Midfield Battle</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Gareth Bale</span>
+        <span class="overlay-sub">Wales &middot; Winger</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="matches" data-index="3">
-      <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&h=400&fit=crop" alt="Penalty kick" loading="lazy" />
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg/330px-Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg"
+        alt="Neymar Jr." loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Matches</span>
-        <span class="overlay-title">Penalty Kick</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Neymar Jr.</span>
+        <span class="overlay-sub">Brazil &middot; Forward</span>
       </div>
     </article>
 
-    <!-- Players -->
-    <article class="gallery-item" data-category="players" data-index="4">
-      <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&h=400&fit=crop" alt="Player dribbling" loading="lazy" />
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg/330px-Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/6/66/Picture_with_Mbapp%C3%A9_%28cropped_and_rotated%29.jpg"
+        alt="Kylian Mbappé" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Players</span>
-        <span class="overlay-title">On the Ball</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Kylian Mbappé</span>
+        <span class="overlay-sub">France &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="players" data-index="5">
-      <img src="https://images.unsplash.com/photo-1551958219-acbc595d9e10?w=600&h=400&fit=crop" alt="Goalkeeper save" loading="lazy" />
+    <article class="gallery-item" data-category="stars">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg/330px-Zlatan_Ibrahimovi%C4%87_June_2018.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg"
+        alt="Zlatan Ibrahimović" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Players</span>
-        <span class="overlay-title">The Save</span>
+        <span class="overlay-category">Modern Stars</span>
+        <span class="overlay-title">Zlatan Ibrahimović</span>
+        <span class="overlay-sub">Sweden &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="players" data-index="6">
-      <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&h=400&fit=crop" alt="Player in training" loading="lazy" />
+    <!-- Legends -->
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pele_con_brasil_%28cropped%29.jpg/330px-Pele_con_brasil_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/5/5e/Pele_con_brasil_%28cropped%29.jpg"
+        alt="Pelé" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Players</span>
-        <span class="overlay-title">Training Day</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Pelé</span>
+        <span class="overlay-sub">Brazil &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="players" data-index="7">
-      <img src="https://images.unsplash.com/photo-1600679472829-3044539ce8ed?w=600&h=400&fit=crop" alt="Free kick technique" loading="lazy" />
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/330px-Argentina_celebrando_copa_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/4/48/Argentina_celebrando_copa_%28cropped%29.jpg"
+        alt="Diego Maradona" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Players</span>
-        <span class="overlay-title">Free Kick</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Diego Maradona</span>
+        <span class="overlay-sub">Argentina &middot; Midfielder</span>
       </div>
     </article>
 
-    <!-- Stadiums -->
-    <article class="gallery-item" data-category="stadiums" data-index="8">
-      <img src="https://images.unsplash.com/photo-1565732808-6c7c6b69f0b1?w=600&h=400&fit=crop" alt="Stadium at night" loading="lazy" />
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg"
+        alt="Zinedine Zidane" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Stadiums</span>
-        <span class="overlay-title">Night Lights</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Zinedine Zidane</span>
+        <span class="overlay-sub">France &middot; Midfielder</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="stadiums" data-index="9">
-      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop" alt="Packed stadium crowd" loading="lazy" />
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Andrea_Pirlo_%28cropped%29.jpg/330px-20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Andrea_Pirlo_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/6/6e/20150616_-_Portugal_-_Italie_-_Gen%C3%A8ve_-_Andrea_Pirlo_%28cropped%29.jpg"
+        alt="Andrea Pirlo" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Stadiums</span>
-        <span class="overlay-title">Sold Out</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Andrea Pirlo</span>
+        <span class="overlay-sub">Italy &middot; Midfielder</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="stadiums" data-index="10">
-      <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&h=400&fit=crop" alt="Aerial stadium view" loading="lazy" />
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ronaldinho_in_2019.jpg/330px-Ronaldinho_in_2019.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/e/e8/Ronaldinho_in_2019.jpg"
+        alt="Ronaldinho" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Stadiums</span>
-        <span class="overlay-title">Bird's Eye</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Ronaldinho</span>
+        <span class="overlay-sub">Brazil &middot; Forward</span>
       </div>
     </article>
 
-    <article class="gallery-item" data-category="stadiums" data-index="11">
-      <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=600&h=400&fit=crop" alt="Empty stadium pitch" loading="lazy" />
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ronaldo_Lu%C3%ADs_Naz%C3%A1rio_de_Lima_2019_%283x4_cropped%29.jpg/330px-Ronaldo_Lu%C3%ADs_Naz%C3%A1rio_de_Lima_2019_%283x4_cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/7/78/Ronaldo_Lu%C3%ADs_Naz%C3%A1rio_de_Lima_2019_%283x4_cropped%29.jpg"
+        alt="Ronaldo R9" loading="lazy" />
       <div class="overlay">
-        <span class="overlay-category">Stadiums</span>
-        <span class="overlay-title">Before Kickoff</span>
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Ronaldo R9</span>
+        <span class="overlay-sub">Brazil &middot; Forward</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg/330px-Thierry_Henry_%2851649035951%29_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/b/b9/Thierry_Henry_%2851649035951%29_%28cropped%29.jpg"
+        alt="Thierry Henry" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Thierry Henry</span>
+        <span class="overlay-sub">France &middot; Forward</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg/330px-David_Beckham_UNICEF_%28cropped2%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg"
+        alt="David Beckham" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">David Beckham</span>
+        <span class="overlay-sub">England &middot; Midfielder</span>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="legends">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/LS3_1288_%2853332367864%29_%28cropped%29.jpg/330px-LS3_1288_%2853332367864%29_%28cropped%29.jpg"
+        data-fullsrc="https://upload.wikimedia.org/wikipedia/commons/a/a8/LS3_1288_%2853332367864%29_%28cropped%29.jpg"
+        alt="Roberto Carlos" loading="lazy" />
+      <div class="overlay">
+        <span class="overlay-category">Legends</span>
+        <span class="overlay-title">Roberto Carlos</span>
+        <span class="overlay-sub">Brazil &middot; Defender</span>
       </div>
     </article>
 

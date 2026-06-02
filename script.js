@@ -71,13 +71,12 @@
   function showSlide(index) {
     const item    = visibleItems[index];
     const img     = item.querySelector('img');
-    const title   = item.querySelector('.overlay-title').textContent;
-    const category = item.querySelector('.overlay-category').textContent;
+    const title = item.querySelector('.overlay-title').textContent;
+    const sub   = item.querySelector('.overlay-sub')?.textContent ?? '';
 
-    // load a larger version of the same Unsplash image
-    lbImg.src = img.src.replace(/w=600&h=400/, 'w=1200&h=800');
-    lbImg.alt  = img.alt;
-    lbCaption.textContent = `${category} — ${title}`;
+    lbImg.src = img.dataset.fullsrc || img.src;
+    lbImg.alt = img.alt;
+    lbCaption.textContent = sub ? `${title} · ${sub}` : title;
 
     lbPrev.style.visibility = index > 0                     ? 'visible' : 'hidden';
     lbNext.style.visibility = index < visibleItems.length - 1 ? 'visible' : 'hidden';

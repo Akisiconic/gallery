@@ -116,8 +116,9 @@ header h1 {
 
 .gallery-item img {
   width: 100%;
-  height: 220px;
+  height: 300px;
   object-fit: cover;
+  object-position: top center;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -162,6 +163,12 @@ header h1 {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+}
+
+.overlay-sub {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.15rem;
 }
 
 /* ── Lightbox ─────────────────────────────────────────────── */
@@ -273,7 +280,7 @@ header h1 {
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 600px) {
   .gallery { grid-template-columns: 1fr 1fr; gap: 0.75rem; padding: 0 0.75rem; }
-  .gallery-item img { height: 160px; }
+  .gallery-item img { height: 220px; }
   .lightbox-nav { width: 38px; height: 38px; font-size: 1.4rem; }
   .lightbox-img { max-width: 92vw; max-height: 70vh; }
 }
